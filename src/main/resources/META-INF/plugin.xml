@@ -1,11 +1,11 @@
 <idea-plugin>
-    <id>org.example.generatorPlugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <id>com.xavier.generatorPlugin</id>
+    <name>generatorPlugin</name>
+    <vendor email="1904006196@qq.com" url="https://blog.csdn.net/lendsomething?spm=1000.2115.3001.5343">Xavier</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    一个自定义数据库反向生成代码的idea插件，未经作者允许，禁止用于商业用途<br>
+    <em>generatorPlugin</em>
     ]]></description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
@@ -18,5 +18,9 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="com.xavier.generatorPlugin.action.generatorAction"
+                class="com.xavier.generatorPlugin.action.generatorAction" text="codeGenerator" description="codeGeneratorAction">
+            <add-to-group group-id="NewGroup" anchor="last"/>
+        </action>
     </actions>
 </idea-plugin>
